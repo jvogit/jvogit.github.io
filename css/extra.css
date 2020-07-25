@@ -1,0 +1,25 @@
+body {
+    background-color: #363636;
+}
+p, .navbar-menu a, .title {
+    color: white;
+}
+.container {
+    max-width: 960px;
+}
+.greeting h2 {
+    padding-top: 10px;
+}
+.social-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px 0px 5px;
+}
+.social-bar a {
+    margin-right: 20px;
+}
+.projects {
+    padding: 1.50rem;
+    min-height: 500px;
+}
