@@ -1,6 +1,9 @@
 body {
     background-color: #363636;
 }
+html {
+    scroll-padding-top: 50px;
+}
 p, .navbar-menu a, .title {
     color: white;
 }
