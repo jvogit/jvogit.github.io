@@ -3,19 +3,123 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>jvogit</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/func.js"></script>
   </head>
   <body>
-  <section class="section">
+  <!-- NAVIGATION -->
+  <nav class="navbar is-dark">
     <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+      <div class="navbar-brand">
+        <a href="#" class="navbar-item">
+          Justin Vo
+        </a>
+        <a href="https://github.com/jvogit/" class="navbar-item">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/justinnvo/" class="navbar-item">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="navbar-burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVIGATION -->
+  <!-- START MAIN -->
+  <section class="hero is-dark is-bold">
+    <div class="hero-body">
+      <div style= "padding-top: 5px;" class="container">
+        <div class="greeting columns is-mobile">
+          <div class="column is-two-thirds">
+            <h1 class="title">
+              Hello, World!
+            </h1>
+            <h2 class="subtitle">
+              My name is Justin Vo
+            </h2>
+            <p>I'm a computer science student from the University of California,
+              Santa Barbara.
+            </p>
+          </div>
+          <div style="display: flex; justify-content: center;" class="column">
+            <img src="img/avatar.svg" width="150px" height="150px">
+          </div>
+        </div>
+        <div class="intro columns is-desktop">
+          <div class="column">
+            <p>
+              I enjoy solving problems with the magic of computer science.
+            </p>
+            <p>
+              Currently, I'm interested in fullstack web development and machine learning. I hope
+              to post some interesting side projects to come on this website!
+            </p>
+          </div>
+          <div class="column">
+            <b>Find me at:</b>
+            <div class="social-bar">
+              <a href="http://github.com/jvogit/" class="button is-black">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+              <a href="https://www.linkedin.com/in/justinnvo/" class="button is-link">
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="content has-text-centered">
+            <p>
+              Made with <a href="https://bulma.io/">bulma</a>
+            </p>
+            <p>Copyright © 2020 | All Rights Reserved</p>
+          </div>
+        </div>
+        <div class="column">
+          <div style="justify-content: center;" class="social-bar">
+            <a href="http://github.com/jvogit/" class="button is-black">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/justinnvo/" class="button is-link">
+              <span class="icon">
+                <i class="fab fa-linkedin"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END MAIN -->
   </body>
 </html>
