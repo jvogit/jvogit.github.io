@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +12,12 @@
   </head>
   <body>
   <!-- NAVIGATION -->
-  <nav class="navbar is-dark is-fixed-top">
+  <nav class="navbar is-dark">
     <div class="container">
       <div class="navbar-brand">
-        <a href="#" class="navbar-item">
+        <div class="navbar-item">
           <b>Justin Vo</b>
-        </a>
+        </div>
         <a href="https://github.com/jvogit/" class="navbar-item">
           <i class="fab fa-github"></i>
         </a>
@@ -32,7 +32,7 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a href ="/" class="navbar-item">Home</a>
+          <a href ="#projects" class="navbar-item">Projects</a>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -48,7 +48,7 @@
   </nav>
   <!-- END NAVIGATION -->
   <!-- START MAIN -->
-  <section class="hero is-primary" id="home">
+  <section class="hero" id="home">
     <div class="hero-body">
       <div class="container">
         <div class="greeting columns is-mobile">
@@ -64,7 +64,7 @@
             </p>
           </div>
           <div style="display: flex; justify-content: center;" class="column">
-            <img src="img/avatar.svg" width="150px" height="150px">
+            <img src="img/avatarone.svg" width="150px" height="150px">
           </div>
         </div>
         <div class="intro columns is-desktop">
@@ -103,27 +103,96 @@
         <div class="column is-full">
           <h1 class="title">Projects</h1>
         </div>
-      </div>
-      <div style="justify-content: center; padding: 100px 0px 100px" class="columns">
+      </div>  
+      <div style="display: block;">
         <div class="card">
-          <div class="card-content has-text-centered">
-            There seems to be no projects... yet!
+          <div class="card-content content">
+            <p class="title">
+              instagram4j
+            </p>
+            <p>
+              Reverse engineered Instagram Android internal API. Java based
+              client to interface with Instagram's private API.
+            </p>
+            <ul>
+              <li>Many requests supported</li>
+              <li>Asynchronous execution</li>
+              <li>Custom request and response framework</li>
+            </ul>
           </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <span>
+                <a href="https://github.com/instagram4j/instagram4j">View on GitHub</a>
+              </span>
+            </p>
+          </footer>
+        </div>
+        <div class="card">
+          <div class="card-content content">
+            <p class="title">
+              PetDateApp
+            </p>
+            <p>
+              An app for pet enthusiasts! Raising awareness for adoptable pets!
+            </p>
+            <ul>
+              <li>Tinder swipe mechanic</li>
+              <li>Upload and swipe on other people's pets!</li>
+              <li>Learn how to adopt a pet</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <span>
+                <a href="https://github.com/PetDate/pet-date-app">View on GitHub</a>
+              </span>
+            </p>
+            <p class="card-footer-item">
+              <span>
+                <a href="https://find-a-pet.online/">View website!</a>
+              </span>
+            </p>
+          </footer>
+        </div>
+        <div class="card">
+          <div class="card-content content">
+            <p class="title">
+              MyEssentials
+            </p>
+            <p>
+              Minecraft plugin with essentials for my private server with friends:
+            </p>
+            <ul>
+              <li>/tpa - teleport requests</li>
+              <li>/home - teleport to bed</li>
+              <li>/back - teleport to last location</li>
+              <li>basic world managment</li>
+              <li>some minecart enhancements</li>
+              <li>/passive - passive mode</li>
+            </ul>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <span>
+                <a href="https://github.com/jvogit/MyEssentials/">View on GitHub</a>
+              </span>
+            </p>
+          </footer>
         </div>
       </div>
     </div>
   </section>
   <!-- END PROJECTS -->
+  <div style="flex: 1"></div>
   <footer class="footer">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div class="content has-text-centered">
-            <p>
-              Made with <a href="https://bulma.io/">bulma</a>
-            </p>
-            <p>Copyright © 2020 | All Rights Reserved</p>
-          </div>
+    <div class="columns">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Made with <a href="https://bulma.io/">bulma</a>
+          </p>
+          <p>Copyright © 2021 | All Rights Reserved</p>
         </div>
       </div>
     </div>
