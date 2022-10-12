@@ -31,3 +31,9 @@ p, .navbar-menu a, .title {
 .projects .card {
     margin-bottom: 1.5rem;
 }
+.avatar-img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    clip-path: circle();
+}

@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jvogit</title>
-    <link rel="stylesheet" href="css/mystyles.css">
+    <title>Justin Vo</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/extra.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/func.js"></script>
+    <script src="_javascript/jquery-3.5.1.slim.min.js"></script>
+    <script src="_javascript/func.js"></script>
   </head>
   <body>
   <!-- NAVIGATION -->
-  <nav class="navbar is-dark">
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <div class="navbar-item">
@@ -24,7 +24,7 @@
         <a href="https://www.linkedin.com/in/justinnvo/" class="navbar-item">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a role="button" class="navbar-burger">
+        <a class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -52,45 +52,31 @@
     <div class="hero-body">
       <div class="container">
         <div class="greeting columns is-mobile">
-          <div class="column is-two-thirds">
+          <div class="column">
             <h1 class="title">
               Hello, World!
             </h1>
-            <h2 class="subtitle">
-              My name is Justin Vo
-            </h2>
-            <p>I'm a computer science student from the University of California,
-              Santa Barbara.
+            <p>
+              I'm Justin Vo, a computer science student at UCSB. I'm a very curious person and I'm interested in backend web development, machine learning, cloud infrasturcture/internal tool develpoment/DevOps, and some game development. 
             </p>
+            <div style="margin-top: 24px;">
+              <b>Find me at:</b>
+              <div class="social-bar">
+                <a href="http://github.com/jvogit/" class="button is-black">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+                <a href="https://www.linkedin.com/in/justinnvo/" class="button is-info">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
           <div style="display: flex; justify-content: center;" class="column">
-            <img src="img/avatarone.svg" width="150px" height="150px">
-          </div>
-        </div>
-        <div class="intro columns is-desktop">
-          <div class="column">
-            <p>
-              I enjoy solving problems with the magic of computer science.
-            </p>
-            <p>
-              Currently, I'm interested in fullstack web development and machine learning. I hope
-              to post some interesting side projects to come on this website!
-            </p>
-          </div>
-          <div class="column">
-            <b>Find me at:</b>
-            <div class="social-bar">
-              <a href="http://github.com/jvogit/" class="button is-black">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-              </a>
-              <a href="https://www.linkedin.com/in/justinnvo/" class="button is-info">
-                <span class="icon">
-                  <i class="fab fa-linkedin"></i>
-                </span>
-              </a>
-            </div>
+            <img src="img/avatar.jpg" class="avatar-img">
           </div>
         </div>
       </div>
