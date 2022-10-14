@@ -1,0 +1,10 @@
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "./variables";
+$scheme-main: $dark;
+$scheme-invert: $white;
+$footer-background-color: $scheme-main;
+$link: $scheme-invert;
+$link-hover: $scheme-invert;
+$text: $scheme-invert;
+$text-strong: $scheme-invert;
+$body-background-color: $dark-bg-color;

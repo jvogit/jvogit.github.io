@@ -26,14 +26,8 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "./variables";
 $family-sans-serif: "Nunito", sans-serif;
-$primary: #3b3b3b;
-$dark: #303030;
-$footer-background-color: $dark;
-$footer-color: true;
-$scheme-main: $primary;
-$scheme-main-bis: #343434;
-$link: #cfcfcf;
-$link-hover: #ffffff;
-$text: white;
+@import "./dark-styles.scss";
 @import "../node_modules/bulma/bulma";
