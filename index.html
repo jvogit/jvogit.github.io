@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Justin Vo</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/extra.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-    <script src="_javascript/jquery-3.5.1.slim.min.js"></script>
-    <script src="_javascript/func.js"></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justin Vo</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/extra.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/func.js"></script>
+</head>
+
+<body class="has-navbar-fixed-top" id="home">
   <!-- NAVIGATION -->
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <div class="navbar-item">
+        <a href="#home" class="navbar-item">
           <b>Justin Vo</b>
-        </div>
+        </a>
         <a href="https://github.com/jvogit/" class="navbar-item">
           <i class="fab fa-github"></i>
         </a>
@@ -32,7 +34,8 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a href ="#projects" class="navbar-item">Projects</a>
+          <a href="#work-experience" class="navbar-item">Work</a>
+          <a href="#projects" class="navbar-item">Projects</a>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -41,148 +44,228 @@
                 <i style="margin-right: 10px;" class="fa fa-heart"></i>Sponsor
               </a>
             </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
   </nav>
   <!-- END NAVIGATION -->
   <!-- START MAIN -->
-  <section class="hero" id="home">
-    <div class="hero-body">
-      <div class="container">
-        <div class="greeting columns is-mobile">
-          <div class="column">
-            <h1 class="title">
+  <section class="section is-medium">
+    <div class="container">
+      <div class="columns is-mobile is-gapless">
+        <div class="column">
+          <div class="block">
+            <h1 class="title is-1">
               Hello, World!
             </h1>
             <p>
-              I'm Justin Vo, a computer science student at UCSB. I'm a very curious person and I'm interested in backend web development, machine learning, cloud infrasturcture/internal tool develpoment/DevOps, and some game development. 
+              I'm Justin Vo, a computer science student at UCSB. I'm a very curious person and I'm interested in backend
+              web development, machine learning, cloud infrasturcture/internal tool develpoment/DevOps, and some game
+              development.
             </p>
-            <div style="margin-top: 24px;">
-              <b>Find me at:</b>
-              <div class="social-bar">
-                <a href="http://github.com/jvogit/" class="button is-black">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                </a>
-                <a href="https://www.linkedin.com/in/justinnvo/" class="button is-info">
-                  <span class="icon">
-                    <i class="fab fa-linkedin"></i>
-                  </span>
-                </a>
-              </div>
+          </div>
+          <div class="block">
+            <h2 class="title is-6">Find me at:</h2>
+            <div class="block">
+              <a href="http://github.com/jvogit/" class="block button is-black">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+              <a href="https://www.linkedin.com/in/justinnvo/" class="block button is-info">
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </a>
             </div>
           </div>
-          <div style="display: flex; justify-content: center;" class="column">
-            <img src="img/avatar.jpg" class="avatar-img">
-          </div>
+        </div>
+        <div style="display: flex; justify-content: center;" class="column">
+          <img src="img/avatar.jpg" class="avatar-img">
         </div>
       </div>
     </div>
   </section>
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
+  <!-- END MAIN -->
+  <!-- WORK EXPERIENCE -->
+  <section class="section" id="work-experience">
     <div class="container">
-      <div class="columns">
-        <div class="column is-full">
-          <h1 class="title">Projects</h1>
+      <h1 class="title is-2">Work Experience</h1>
+      <div class="card block">
+        <div class="card-image">
+          <figure class="image is-1235x169">
+            <img src="img/rippling.jpg" alt="Rippling Banner">
+          </figure>
         </div>
-      </div>  
-      <div style="display: block;">
-        <div class="card">
-          <div class="card-content content">
-            <p class="title">
-              instagram4j
-            </p>
-            <p>
-              Reverse engineered Instagram Android internal API. Java based
-              client to interface with Instagram's private API.
-            </p>
-            <ul>
-              <li>Many requests supported</li>
-              <li>Asynchronous execution</li>
-              <li>Custom request and response framework</li>
-            </ul>
+        <div class="card-content content">
+          <p class="title is-4">Rippling</p>
+          <p class="subtitle is-6">
+            <span>
+              Software Engineer Intern
+            </span>
+            <em>
+              09/2022 - Current
+            </em>
+          </p>
+        </div>
+      </div>
+      <div class="card block">
+        <div class="card-image">
+          <figure class="image is-1235x169">
+            <img src="img/apple.jpg" alt="Apple Banner">
+          </figure>
+        </div>
+        <div class="card-content content">
+          <p class="title is-4">Apple</p>
+          <p class="subtitle is-6">
+            <span>
+              Software Engineer Intern
+            </span>
+            <em>
+              06/2022 - 09/2022
+            </em>
+          </p>
+        </div>
+      </div>
+      <div class="card block">
+        <div class="card-image">
+          <figure class="image is-1235x169">
+            <img src="img/aws.jpg" alt="AWS Banner">
+          </figure>
+        </div>
+        <div class="card-content content">
+          <p class="title is-4">Amazon</p>
+          <p class="subtitle is-6">
+            <span>
+              Software Engineer Intern
+            </span>
+            <em>
+              06/2021 - 09/2021
+            </em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END WORK EXPERIENCE -->
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h1 class="title is-2">Projects</h1>
+      <div class="card block">
+        <div class="card-image">
+          <figure class="image is-1235x338">
+            <img src="img/animelist.jpg" alt="Anime List Tracker">
+          </figure>
+        </div>
+        <div class="card-content content">
+          <p class="title is-4">
+            Anime List Tracker
+          </p>
+          <div class="block">
+            <span class="tag is-light">React</span>
+            <span class="tag is-light">MongoDB</span>
+            <span class="tag is-light">Springboot</span>
+            <span class="tag is-light">GraphQL</span>
+            <span class="tag is-light">Java</span>
+            <span class="tag is-light">TypeScript</span>
           </div>
-          <footer class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a href="https://github.com/instagram4j/instagram4j">View on GitHub</a>
-              </span>
-            </p>
-          </footer>
+          <p class="subtitle is-6">
+            An anime list app that allows better customization for rating your favorite anime in however way you want!
+          </p>
+          <ul>
+            <li>Led a team to build a fullstack web application for anime fans to track and rate anime shows</li>
+            <li>Spearheaded the design and implementation of a customizable rating system with user customizable scoring
+              criteria, score weights, and score labels</li>
+            <li>Utilized React to develop the rating system, user anime list, and profile customization UI features</li>
+            <li>Automated CI/CD pipeline using GitHub actions to test feature PRs and automate production deployment
+            </li>
+          </ul>
         </div>
-        <div class="card">
-          <div class="card-content content">
-            <p class="title">
-              PetDateApp
-            </p>
-            <p>
-              An app for pet enthusiasts! Raising awareness for adoptable pets!
-            </p>
-            <ul>
-              <li>Tinder swipe mechanic</li>
-              <li>Upload and swipe on other people's pets!</li>
-              <li>Learn how to adopt a pet</li>
-            </ul>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              <a href="https://github.com/jvogit/project-t10-animelist">GitHub</a>
+            </span>
+          </p>
+          <p class="card-footer-item">
+            <span>
+              <a href="https://cs148-t10-animelist.vercel.app/list/61ab1bebe1b7e76ba1261be9">View my list!</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+      <div class="card block">
+        <div class="card-image">
+          <figure class="image is-1235x338">
+            <img src="img/psychoswordsman.jpg" alt="Psycho Swordsman">
+          </figure>
+        </div>
+        <div class="card-content content">
+          <p class="title is-4">
+            Psycho Swordsman
+          </p>
+          <div class="block">
+            <span class="tag is-light">Unity</span>
+            <span class="tag is-light">C#</span>
+            <span class="tag is-light">Game Design</span>
+            <span class="tag is-light">Video Game</span>
           </div>
-          <footer class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a href="https://github.com/PetDate/pet-date-app">View on GitHub</a>
-              </span>
-            </p>
-            <p class="card-footer-item">
-              <span>
-                <a href="https://find-a-pet.online/">View website!</a>
-              </span>
-            </p>
-          </footer>
+          <p class="subtitle is-6">
+            Psycho Swordsman has you, a swordsman for your village, defeat invaders and save your village!
+          </p>
+          <ul>
+            <li>Designed, developed, and released an indie action adventure melee combat video game in Unity</li>
+            <li>Implemented a melee sword combat system with precise combos, rolling, and parrying mechanics</li>
+            <li>Utilized state machines to implement fun, complex combat AI for enemies</li>
+          </ul>
         </div>
-        <div class="card">
-          <div class="card-content content">
-            <p class="title">
-              MyEssentials
-            </p>
-            <p>
-              Minecraft plugin with essentials for my private server with friends:
-            </p>
-            <ul>
-              <li>/tpa - teleport requests</li>
-              <li>/home - teleport to bed</li>
-              <li>/back - teleport to last location</li>
-              <li>basic world managment</li>
-              <li>some minecart enhancements</li>
-              <li>/passive - passive mode</li>
-            </ul>
+      </div>
+      <div class="card block">
+        <div class="card-image">
+          <figure class="image is-1235x338">
+            <img src="img/instagram4j.jpg" alt="instagram4j">
+          </figure>
+        </div>
+        <div class="card-content content">
+          <p class="title is-4">
+            instagram4j
+          </p>
+          <div class="block">
+            <span class="tag is-light">Java</span>
+            <span class="tag is-light">Open Source</span>
           </div>
-          <footer class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a href="https://github.com/jvogit/MyEssentials/">View on GitHub</a>
-              </span>
-            </p>
-          </footer>
+          <p class="subtitle is-6">
+            Reverse engineered Instagram Android internal API. Java based
+            client to interface with Instagram's private API.
+          </p>
+          <ul>
+            <li>Rewrote 700+ stars open source custom Java client for Instagram's API addressing 200+ issues</li>
+            <li>Reverse engineered Instagram's REST API and MQTT protocol for realtime push notifications</li>
+            <li>Implement a Java custom client for the modified MQTT 3.1.1 light weight messging protocol in Java</li>
+          </ul>
         </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              <a href="https://github.com/instagram4j/instagram4j">GitHub</a>
+            </span>
+          </p>
+        </footer>
       </div>
     </div>
   </section>
   <!-- END PROJECTS -->
   <div style="flex: 1"></div>
   <footer class="footer">
-    <div class="columns">
-      <div class="column">
-        <div class="content has-text-centered">
-          <p>
-            Made with <a href="https://bulma.io/">bulma</a>
-          </p>
-          <p>Copyright © 2021 | All Rights Reserved</p>
-        </div>
-      </div>
+    <div class="container is-flex is-flex-direction-column is-align-items-center">
+      <p>
+        <span>Made with <a href="https://bulma.io/">bulma</a></span>
+      </p>
+      <p>Copyright © 2022 | All Rights Reserved</p>
     </div>
   </footer>
-  <!-- END MAIN -->
-  </body>
+</body>
+
 </html>
